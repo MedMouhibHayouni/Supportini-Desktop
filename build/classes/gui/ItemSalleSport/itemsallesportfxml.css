@@ -1,0 +1,42 @@
+.itemsalle {
+    -fx-background-color:  #93c144;
+   
+   -fx-background-radius: 30;
+   
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}
+/*.label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-font-family: "Franklin Gothic Medium";
+    -fx-effect: dropshadow( gaussian , rgba(255,255,255,0.5) , 0,0,0,1 );
+}*/
+
+
+.nom{
+     -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-font-family: "Franklin Gothic Medium";
+    
+}
+.prix{
+    -fx-font-family: "Franklin Gothic Medium";
+      -fx-text-fill: #ffffff;
+}
+.adress{
+     -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-font-family: "Franklin Gothic Medium";
+   
+}
+
+.classs{
+     -fx-font-family: "Franklin Gothic Medium";
+      -fx-text-fill: #ffffff;
+}
+.image{
+    border-radius: 20px;
+}

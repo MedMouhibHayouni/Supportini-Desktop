@@ -1,0 +1,15 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.buttonChoiceProfil {
+    cursor: pointer;
+    
+}
+.buttonChoiceProfil:hover {
+    background-color: white;
+    color:  #ff8c09;
+}

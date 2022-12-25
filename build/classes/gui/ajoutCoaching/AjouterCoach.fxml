@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="677.0" prefWidth="981.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ajoutCoaching.AjouterCoachController">
+
+  <children>
+      <Pane layoutX="44.0" layoutY="113.0" prefHeight="457.0" prefWidth="594.0">
+         <children>
+            <Label layoutX="18.0" layoutY="42.0" prefHeight="27.0" prefWidth="81.0" text="titre" textFill="#eeab12">
+             
+                 
+            </Label>
+            <Label layoutX="18.0" layoutY="183.0" prefHeight="27.0" prefWidth="107.0" text="planing" textFill="#eeab12">
+              
+            </Label>
+            <Label layoutX="11.0" layoutY="236.0" prefHeight="27.0" prefWidth="101.0" text="description" textFill="#eeab12">
+              
+            </Label>
+            <Label layoutX="18.0" layoutY="103.0" prefHeight="27.0" prefWidth="88.0" text="discipline" textFill="#eeab12">
+               
+            </Label>
+            <TextField fx:id="txtPrix" layoutX="408.0" layoutY="69.0" />
+            <TextField fx:id="txtDiscipline" layoutX="105.0" layoutY="104.0" />
+            <TextField fx:id="txtPlaning" layoutX="105.0" layoutY="184.0" />
+            <Label fx:id="validationtRue" layoutX="351.0" layoutY="154.0" prefHeight="17.0" prefWidth="81.0" text="nb max" textFill="#eeab12">
+               
+            </Label>
+            <Label layoutX="351.0" layoutY="68.0" prefHeight="27.0" prefWidth="88.0" text="prix" textFill="#eeab12">
+              
+            </Label>
+            <TextField fx:id="txtTitre" layoutX="105.0" layoutY="43.0" />
+            <TextField fx:id="txtNbMax" layoutX="408.0" layoutY="150.0" />
+            <TextArea fx:id="txtDescription" layoutX="95.0" layoutY="245.0" prefHeight="200.0" prefWidth="455.0" />
+
+            <Label fx:id="VerifTitre" layoutX="153.0" layoutY="73.0" textFill="#fc0505" />
+            <Label fx:id="VerifDiscipline" layoutX="153.0" layoutY="144.0" />
+            <Label fx:id="VerifPlanning" layoutX="153.0" layoutY="220.0" />
+            <Label fx:id="VerifPrix" layoutX="461.0" layoutY="43.0" />
+            <Label fx:id="VerifNB" layoutX="458.0" layoutY="122.0" />
+            <Label fx:id="VerifDescription" layoutX="458.0" layoutY="220.0" />
+
+         </children>
+      </Pane>
+      <Button fx:id="btnAjouter" layoutX="453.0" layoutY="599.0" mnemonicParsing="false" onAction="#Ajouter" prefHeight="38.0" prefWidth="101.0" style="-fx-background-color: #ff8c09; -fx-font-weight: BOLD;" text="Ajouter" textFill="WHITE">
+         
+      </Button>
+      <ImageView fx:id="img" fitHeight="242.0" fitWidth="277.0" layoutX="660.0" layoutY="317.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/coach-personnel-comment-trouver-un-bon-coach-sportif.jpeg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="TxtImage" layoutX="704.0" layoutY="258.0" prefHeight="25.0" prefWidth="233.0" />
+      <Button fx:id="btnImage" layoutX="757.0" layoutY="191.0" mnemonicParsing="false" onAction="#AjouterImage" text="Ajouter image" />
+
+      <Label fx:id="VerifImage" layoutX="789.0" layoutY="582.0" />
+      <Button fx:id="btnRetour" layoutX="948.0" layoutY="14.0" mnemonicParsing="false" onAction="#retour" prefHeight="49.0" prefWidth="52.0" style="-fx-background-color: trensparent;">
+         <graphic>
+            <ImageView fitHeight="43.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../uicontrolers/icone_retour.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="436.0" layoutY="88.0" text="Ajouter une annonce " textFill="#ff8c09">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+
+   
+      
+      
+      
+      
+      
+      
+      
+      
+   </children>  
+</AnchorPane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="531.0" prefWidth="791.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.forgetPassword.ValidCodeController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="531.0" prefWidth="392.0" HBox.hgrow="SOMETIMES">
+         <children>
+            <ImageView fitHeight="233.0" fitWidth="261.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../uicontrolers/124652110-doigt-de-la-main-entrant-le-code-pin-déverrouillage-et-mot-de-passe-illustration-vectorielle-isolée-.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <VBox prefHeight="527.0" prefWidth="389.0" HBox.hgrow="ALWAYS">
+         <children>
+            <HBox prefHeight="37.0" prefWidth="399.0" VBox.vgrow="SOMETIMES" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="SOMETIMES">
+               <children>
+                  <Label text="Saisir le code :">
+                     <font>
+                        <Font name="Cambria" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="77.0" prefWidth="399.0" VBox.vgrow="SOMETIMES">
+               <children>
+                  <TextField fx:id="inputCode" prefHeight="44.0" prefWidth="145.0" promptText="****" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="191.0" prefWidth="399.0" VBox.vgrow="SOMETIMES">
+               <children>
+                  <Button fx:id="btnConf" mnemonicParsing="false" onAction="#checkCode" style="-fx-background-color: #ff8c09;" text="Confirmer" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria" size="17.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.6447368264198303" green="0.6447368264198303" blue="0.6447368264198303" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

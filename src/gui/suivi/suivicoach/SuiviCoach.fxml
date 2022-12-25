@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.suivi.suivicoach.SuiviCoachController">
+   <children>
+      <Pane prefHeight="706.0" prefWidth="200.0">
+         <children>
+            <ListView fx:id="ListEntrainer" layoutY="1.0" onMouseClicked="#show" prefHeight="706.0" prefWidth="200.0" />
+         </children>
+      </Pane>
+      <Label layoutX="450.0" layoutY="29.0" prefHeight="18.0" prefWidth="382.0" text="Suivi" textAlignment="CENTER" textFill="#e1940d">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="36.0" />
+         </font>
+      </Label>
+      <Button layoutX="310.0" layoutY="612.0" mnemonicParsing="false" onAction="#demanderSuivi" text="Demander Suivi" textFill="#00eaab">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="histobtn" layoutX="609.0" layoutY="612.0" mnemonicParsing="false" onAction="#gotohisto" styleClass="background" text="Consulter Historique Entrainer" textFill="#40ff00">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label fx:id="NomEntrainer" layoutX="481.0" layoutY="136.0" prefHeight="18.0" prefWidth="221.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Text layoutX="259.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom Entrainer      : " wrappingWidth="221.60000000000002">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="258.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prenom Entrainer :" wrappingWidth="212.55621337890625">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="258.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IMC :" wrappingWidth="212.55621337890636">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Text layoutX="257.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PoidsActuelle       :" wrappingWidth="212.55621337890636">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Label fx:id="PrenomEntrainer" layoutX="481.0" layoutY="95.0" prefHeight="18.0" prefWidth="221.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="imclbl" layoutX="472.0" layoutY="282.0" prefHeight="35.0" prefWidth="382.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="PoidsActuelle" layoutX="472.0" layoutY="244.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="35.0" prefWidth="355.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Text layoutX="257.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age                        :" wrappingWidth="212.55621337890636">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Label fx:id="ageSuivi" layoutX="481.0" layoutY="171.0" prefHeight="18.0" prefWidth="221.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Text layoutX="259.0" layoutY="237.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Taille                     :" wrappingWidth="221.60000000000002">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Label fx:id="tailleshow" layoutX="472.0" layoutY="209.0" prefHeight="35.0" prefWidth="382.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <BarChart fx:id="chart" layoutX="210.0" layoutY="378.0" prefHeight="234.0" prefWidth="762.0" title="Suivi par Mois">
+         <xAxis>
+            <CategoryAxis side="BOTTOM" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis side="LEFT" />
+         </yAxis>
+      </BarChart>
+      <Text layoutX="258.0" layoutY="343.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Suivi             :" wrappingWidth="212.55621337890636">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <Label fx:id="DateSuivi" layoutX="471.0" layoutY="317.0" prefHeight="35.0" prefWidth="382.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="470.0" layoutY="612.0" mnemonicParsing="false" onAction="#add_feedback" text="Feedback " textFill="#00eaab">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="sendfeedback" layoutX="292.0" layoutY="649.0" onAction="#add_feedback" prefHeight="35.0" prefWidth="507.0" />
+   </children>
+</AnchorPane>

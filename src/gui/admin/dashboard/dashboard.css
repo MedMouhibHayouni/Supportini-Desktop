@@ -1,0 +1,16 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.btnSidebar {
+    -fx-background-color : #7c8184 ;
+    -fx-text-fill:#333645 ;
+    -fx-background-radius:50px;
+    -fx-border-radius:50px;
+}
+.btnSidebar:hover {
+    -fx-background-color : #b1b8bd ;
+    -fx-text-fill:#333645 ;
+    -fx-background-radius:50px;
+    -fx-border-radius:50px; 
+}

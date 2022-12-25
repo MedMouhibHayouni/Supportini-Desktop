@@ -1,0 +1,14 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.buttonRegister {
+    cursor: pointer;
+}
+.buttonRegister:hover {
+    background-color: white;
+    color:  #ff8c09;
+}

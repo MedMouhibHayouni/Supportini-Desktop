@@ -1,0 +1,45 @@
+
+
+.transparent{
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+
+
+.right-bar{
+    -fx-background-color: #D3D3D3;
+}
+
+.shadow{
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 0.0 ,10.0);
+}
+
+.chosenProdCard{
+    -fx-background-color: #F16C31;
+    -fx-background-radius: 30;
+}
+
+
+
+
+.Ajoutpanier{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 100;
+}
+
+
+
+.shopping-online-card{
+    -fx-background-color: #BAEAC3;
+    -fx-background-radius: 30;
+}
+
+.item{
+    -fx-background-color: #FFFFFF;
+        -fx-background-radius: 30;
+}
+
+produitsfxml{
+       -fx-background-color: #FFFFFF;
+        -fx-background-radius: 30;
+}

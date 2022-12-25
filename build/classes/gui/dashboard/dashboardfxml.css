@@ -1,0 +1,39 @@
+.sideAnchorPane {
+    -fx-background-color: white;
+    -fx-border-color: grey;
+    -fx-border-width:0px 0.5px 0px 0px;
+    -fx-border-raduis: 50px;
+    -fx-background-raduis: 20px;
+    -fx-border-style: solid;
+
+}
+
+.iconBar {
+  -fx-background-color: white;  
+}
+.navBar{
+    -fx-background-color:  #EEAB12;
+}
+.btnDashboard{
+    -fx-background-color: white;
+    /*-fx-border-color: gray;*/
+/*    -fx-border-width:0px 0px 1px 0px;*/
+    -fx-border-raduis: 20px;
+    -fx-background-raduis: 20px;
+    /*-fx-border-bottom-style:  solid;*/
+
+
+
+}
+
+.btnDashboard:hover {
+  
+-fx-background-color:#c0c0c2;
+    
+
+}
+.clientComboBox{
+    -fx-background-color: #EEAB12;
+    -fx-border-color: #EEAB12;
+    -fx-border-style: solid;
+}

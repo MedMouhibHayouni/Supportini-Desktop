@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox fx:id="sceneAdd" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="92.0" prefWidth="952.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.suivi.ajoutSuivi.AjoutSuiviController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="92.0" prefWidth="109.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Text fill="#f2960f" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter Votre Suivi">
+               <font>
+                  <Font name="Cambria Bold" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="92.0" prefWidth="187.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Label text="Poids">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Cambria" size="15.0" />
+               </font>
+            </Label>
+            <VBox alignment="CENTER">
+               <children>
+                  <TextField fx:id="poidsajout" alignment="CENTER" blendMode="DARKEN">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label fx:id="erpoids" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <Label text="Kg">
+               <HBox.margin>
+                  <Insets left="6.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Cambria" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Label text="Taille">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Cambria" size="15.0" />
+               </font>
+            </Label>
+            <VBox alignment="CENTER">
+               <children>
+                  <TextField fx:id="tailleajout" blendMode="DARKEN">
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label fx:id="ertaille">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <Label text="Cm">
+               <font>
+                  <Font name="Cambria" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="6.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="92.0" prefWidth="92.0" HBox.hgrow="ALWAYS">
+         <children>
+            <Button fx:id="closebtn" mnemonicParsing="false" onAction="#closescene" style="-fx-background-color: #8fc042;" text="Enregistrer" textFill="WHITE">
+               <font>
+                  <Font name="Cambria Bold" size="13.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.5789473652839661" green="0.5789473652839661" blue="0.5789473652839661" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</HBox>

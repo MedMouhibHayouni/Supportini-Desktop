@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="509.0" prefWidth="769.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.EspaceCoach.EspaceCoachController">
+   <children>
+      <GridPane prefHeight="509.0" prefWidth="769.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="406.0" minWidth="10.0" prefWidth="384.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="388.0" minWidth="10.0" prefWidth="385.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="428.0" minHeight="10.0" prefHeight="428.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="202.0" minHeight="5.0" prefHeight="39.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <Button fx:id="btnAnnonce" mnemonicParsing="false" onAction="#RedirectToCachings" prefHeight="95.0" prefWidth="387.0" text="Gestion des Annonce Sportives" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Button fx:id="btnRegime" mnemonicParsing="false" onAction="#RedirectToRegime" prefHeight="95.0" prefWidth="387.0" text="Gestion des regimes" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+               <children>
+                  <ImageView fitHeight="429.0" fitWidth="385.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../uicontrolers/kisspng-healthy-diet-eating-lifestyle-food-5d442816d12e52.6447482415647477988568.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="369.0" fitWidth="385.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../uicontrolers/Capture.PNG" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+   </children>
+</HBox>

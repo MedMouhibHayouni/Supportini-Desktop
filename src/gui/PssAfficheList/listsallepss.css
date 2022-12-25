@@ -1,0 +1,16 @@
+/*
+ * Empty Stylesheet file.
+ */
+.btn{
+    -fx-background-color:transparent;
+    -fx-border-style:solid;
+    -fx-border-color: #93c144;
+    -fx-border-radius:10;
+    -fx-border-width:3 3 3 3;
+}
+.btn:hover {
+      -fx-background-color:#93c144;
+      -fx-border-radius:10;
+    -fx-border-width:3 3 3 3;
+    -fx-text-fill:white;
+}

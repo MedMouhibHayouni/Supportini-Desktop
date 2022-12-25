@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.Categorie.CategoriesController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1050.0" style="-fx-background-color:  #9AC8EB;">
+               <children>
+                  <StackPane layoutX="1.0" prefHeight="576.0" prefWidth="1050.0" style="-fx-background-color: #9AC8EB;">
+                     <children>
+                        <Pane fx:id="pnlCustomer" prefHeight="200.0" prefWidth="200.0" />
+                        <Pane fx:id="pnlOrders" prefHeight="200.0" prefWidth="200.0" />
+                        <Pane fx:id="pnlMenus" prefHeight="200.0" prefWidth="200.0" />
+                        <Pane fx:id="pnlOverview" prefHeight="576.0" prefWidth="1048.0" style="-fx-background-color: #333645;">
+                           <children>
+                              <TextField fx:id="rechercher" layoutX="115.0" layoutY="87.0" prefHeight="27.0" prefWidth="431.0" promptText="search" style="-fx-background-color: #333645; -fx-border-color: orange; -fx-border-radius: 2em;" />
+                              <Label fx:id="welcome" layoutX="57.0" layoutY="25.0" textFill="#e7e5e5">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Label>
+                              <TableView fx:id="categoTable" layoutX="8.0" layoutY="324.0" onMouseClicked="#getSelected" prefHeight="200.0" prefWidth="778.0">
+                                <columns>
+                                  <TableColumn fx:id="idCol" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="353.0" text="id" />
+                                  <TableColumn fx:id="cat" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="422.0" text="nom categorie" />
+                                </columns>
+                              </TableView>
+                              <TextField fx:id="id" editable="false" layoutX="239.0" layoutY="162.0" prefHeight="42.0" prefWidth="194.0" visible="false" />
+                              <TextField fx:id="nomcategorie" layoutX="239.0" layoutY="226.0" prefHeight="42.0" prefWidth="194.0" />
+                              <Label layoutX="32.0" layoutY="226.0" text="Nom categorie" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Italic" size="29.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="addd11" layoutX="682.0" layoutY="162.0" mnemonicParsing="false" onAction="#delete" style="-fx-background-color: #333645; -fx-border-color: orange; -fx-border-radius: 2em;" text="Supprimer" textFill="#fff7f7">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="addd" layoutX="567.0" layoutY="162.0" mnemonicParsing="false" onAction="#add" prefHeight="31.0" prefWidth="89.0" style="-fx-background-color: #333645; -fx-border-color: orange; -fx-border-radius: 2em;" text="Ajouter" textFill="#fff7f7">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="addd1" layoutX="567.0" layoutY="226.0" mnemonicParsing="false" onAction="#update" prefHeight="31.0" prefWidth="89.0" style="-fx-background-color: #333645; -fx-border-color: orange; -fx-border-radius: 2em;" text="Modifier" textFill="#fff7f7">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="682.0" layoutY="226.0" mnemonicParsing="false" onMouseClicked="#refreshTable" prefHeight="31.0" prefWidth="89.0" style="-fx-background-color: #333645; -fx-border-color: orange; -fx-border-radius: 2em;" text="Actualiser" textFill="WHITE">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Button>
+                              <Label fx:id="validationcat" layoutX="178.0" layoutY="269.0" textFill="RED">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </StackPane>
+               </children>
+               <effect>
+                  <DropShadow color="#1b1eeb" />
+               </effect>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

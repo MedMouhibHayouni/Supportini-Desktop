@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="568.0" prefWidth="778.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="gui.SalleFXMLController">
+   <children>
+      <Label layoutX="63.0" layoutY="132.0" text="Nom" />
+      <Label layoutX="63.0" layoutY="192.0" text="Mobile" />
+      <Label layoutX="63.0" layoutY="251.0" text="Adress" />
+      <Label layoutX="63.0" layoutY="309.0" text="Materiel" />
+      <Label layoutX="247.0" prefHeight="107.0" prefWidth="285.0" text="SALLE DE SPORT">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+      <Pane layoutX="-2.0" layoutY="81.0" prefHeight="345.0" prefWidth="334.0">
+         <children>
+            <TextField fx:id="Nomfx" layoutX="124.0" layoutY="49.0" />
+            <TextField fx:id="mobilefx" layoutX="124.0" layoutY="110.0" />
+            <TextField fx:id="adressfx" layoutX="124.0" layoutY="171.0" />
+            <TextField fx:id="materielfx" layoutX="124.0" layoutY="233.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

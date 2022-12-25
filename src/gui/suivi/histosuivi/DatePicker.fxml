@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810.0" prefWidth="1315.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.suivi.histosuivi.DatePickerController">
+   <children>
+      <VBox layoutY="117.0" prefHeight="694.0" prefWidth="830.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <ScrollPane fx:id="scroll" prefHeight="800.0" prefWidth="833.0" styleClass="transparent" stylesheets="@style.css">
+                     <content>
+                        <GridPane fx:id="grid" prefHeight="0.0" prefWidth="0.0">
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                           </rowConstraints>
+                        </GridPane>
+                     </content>
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </ScrollPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="830.0" prefHeight="810.0" prefWidth="522.0" style="-fx-background-color: transparent;" styleClass="right-bar" stylesheets="@style.css">
+         <children>
+            <Pane prefHeight="57.0" prefWidth="435.0" style="-fx-background-color: transparent;" VBox.vgrow="ALWAYS" />
+            <AnchorPane prefHeight="870.0" prefWidth="486.0" styleClass="chosen-fruit-card" stylesheets="@style.css">
+               <children>
+                  <Label fx:id="name_perdate" layoutX="62.0" layoutY="62.0" prefHeight="48.0" prefWidth="383.0" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="name_perdate1" layoutX="62.0" layoutY="126.0" prefHeight="48.0" prefWidth="352.0" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="name_perdate2" layoutX="63.0" layoutY="185.0" prefHeight="48.0" prefWidth="352.0" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="name_perdate3" layoutX="61.0" layoutY="240.0" prefHeight="48.0" prefWidth="352.0" textFill="WHITE">
+                     <font>
+                        <Font name="Cambria" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Pane prefHeight="57.0" prefWidth="435.0" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+      <AnchorPane prefHeight="78.0" prefWidth="638.0">
+         <children>
+            <Label layoutX="276.0" layoutY="-1.0" prefHeight="50.0" prefWidth="205.0" text="Historique" textFill="#f16c31">
+               <font>
+                  <Font name="Cambria Bold" size="40.0" />
+               </font>
+            </Label>
+            <Label layoutX="482.0" layoutY="-1.0" prefHeight="50.0" prefWidth="98.0" text="Suivi" textFill="#f06b32e4">
+               <font>
+                  <Font name="Cambria" size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="hboxScene" alignment="CENTER" prefHeight="515.0" prefWidth="914.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.PssAfficheList.ListSallePssController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="515.0" prefWidth="213.0">
+         <children>
+            <Button fx:id="ajoutSalleDeSport" mnemonicParsing="false" onAction="#ajoutSalleDeSport" prefHeight="253.0" prefWidth="63.0" styleClass="btn" stylesheets="@listsallepss.css" text="+" textFill="#93c144">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <ScrollPane fx:id="scrollListSalle" prefHeight="515.0" prefWidth="890.0" styleClass="listSalle" stylesheets="@../salleDeSport/listsallesport.css" HBox.hgrow="ALWAYS">
+         <content>
+            <GridPane fx:id="Lsport" prefHeight="4.0" prefWidth="0.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+            </GridPane>
+         </content>
+      </ScrollPane>
+
+      <HBox prefHeight="515.0" prefWidth="119.0">
+         <children>
+            <ScrollPane fx:id="scrollListSalle1" prefHeight="515.0" prefWidth="120.0" styleClass="listSalle" stylesheets="@../salleDeSport/listsallesport.css" HBox.hgrow="ALWAYS">
+               <content>
+                  <GridPane fx:id="Lsport1" prefHeight="4.0" prefWidth="0.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                  </GridPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </HBox>
+
+   </children>
+</HBox>

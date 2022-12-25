@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane onMouseClicked="#showHisto" onMousePressed="#showHisto" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.suivi.histosuivi.Suivi_ItemController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="63.0" layoutY="8.0" prefHeight="215.0" prefWidth="225.0" stylesheets="@style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="51.0" prefWidth="185.0">
+               <children>
+                  <Label fx:id="nameLabel" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#showHisto" prefHeight="50.0" prefWidth="190.0" text="SUIVI LE">
+                     <font>
+                        <Font name="Cambria" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <Label fx:id="date" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#showHisto" onTouchPressed="#showHisto" prefHeight="144.0" prefWidth="224.0" text="23/07/2023" textFill="#30a2ea">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+   <styleClass>
+      <String fx:value="fruit-item" />
+      <String fx:value="shadow" />
+   </styleClass>
+</AnchorPane>

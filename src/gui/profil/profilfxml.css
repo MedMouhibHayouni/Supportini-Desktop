@@ -1,0 +1,41 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.scrollProfil{
+    -fx-border-style:none;
+}
+.attachBtn {
+/*    -fx-background-color: white;
+    -fx-border-style:solid;
+    -fx-border-color: #2596be;
+    -fx-border-radius:50px;
+    -fx-background-raduis:50px*/
+  -fx-border-color: #2596be;
+  
+  -fx-background-radius: 5;
+  -fx-background-insets: 0;
+  -fx-border-radius: 5;
+  -fx-border-width: 2;
+
+  
+    -fx-stroke: #2596be;
+  -fx-stroke-width: 2;
+ 
+  -fx-text-fill: #2596be;
+
+ 
+}
+.attachBtn:focused {
+  -fx-background-color: -fx-focus-color, white;
+}
+.attachBtn:hover {
+  -fx-effect: innershadow(gaussian,#828282, 15, 0, 0, 0);
+  -fx-cursor:hand;
+}
+.container {
+    -fx-border-style:solid;
+    -fx-border-color:white;
+   
+    -fx-border-width:3 3 3 3;
+}

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fx:id="scrollProfil" prefHeight="922.0" prefWidth="1600.0" styleClass="scrollProfil" stylesheets="@profilfxml.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.profil.ProfilFXMLController">
+   <content>
+      <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="883.0" prefWidth="1564.0">
+         <children>
+            <GridPane fx:id="gridInfo" prefHeight="857.0" prefWidth="583.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="271.0" minHeight="10.0" prefHeight="254.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="255.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="248.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="232.0" minHeight="10.0" prefHeight="59.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="160.0" minHeight="1.0" prefHeight="66.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="146.0" minHeight="10.0" prefHeight="84.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="116.0" minHeight="10.0" prefHeight="79.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="116.0" minHeight="10.0" prefHeight="76.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="116.0" minHeight="10.0" prefHeight="91.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="116.0" minHeight="0.0" prefHeight="90.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0" />
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+                     <children>
+                        <Circle fx:id="myCircle" fill="DODGERBLUE" radius="100.0" stroke="BLACK" strokeType="INSIDE">
+                           <effect>
+                              <DropShadow>
+                                 <color>
+                                    <Color red="0.6052631735801697" green="0.5996588468551636" blue="0.5996588468551636" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Circle>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+                     <children>
+                        <Label fx:id="nomPrenom" alignment="CENTER" contentDisplay="CENTER" prefHeight="47.0" prefWidth="251.0" text="name" wrapText="true">
+                           <font>
+                              <Font name="Cambria Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="3">
+                     <children>
+                        <Label fx:id="typeUser" alignment="CENTER" prefHeight="47.0" prefWidth="157.0" text="type cpte" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font name="Cambria Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="4">
+                     <children>
+                        <ImageView fitHeight="54.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../uicontrolers/email.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="email" prefHeight="47.0" prefWidth="220.0" text="email" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font name="Cambria Bold" size="24.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="5">
+                     <children>
+                        <ImageView fitHeight="40.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../uicontrolers/phone.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label fx:id="phone" prefHeight="47.0" prefWidth="220.0" text="phone" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font name="Cambria Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="91.0" prefWidth="525.0" GridPane.rowIndex="10">
+                     <children>
+                        <ImageView fx:id="iconSexe" fitHeight="73.0" fitWidth="87.0" pickOnBounds="true" preserveRatio="true" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="119.0" prefWidth="525.0" GridPane.rowIndex="6">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="40.0" prefWidth="343.0" text="Informations Personnelles">
+                           <font>
+                              <Font name="Cambria Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="7">
+                     <children>
+                        <Label prefHeight="40.0" prefWidth="67.0" text="Age:">
+                           <font>
+                              <Font name="Cambria Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="age" alignment="CENTER" prefHeight="40.0" prefWidth="159.0">
+                           <font>
+                              <Font name="Cambria Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="8">
+                     <children>
+                        <Label prefHeight="40.0" prefWidth="87.0" text="Poids:">
+                           <font>
+                              <Font name="Cambria Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="poids" alignment="CENTER" prefHeight="40.0" prefWidth="172.0">
+                           <font>
+                              <Font name="Cambria Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="9">
+                     <children>
+                        <Label prefHeight="40.0" prefWidth="86.0" text="Taille:">
+                           <font>
+                              <Font name="Cambria Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="taille" alignment="CENTER" prefHeight="40.0" prefWidth="165.0">
+                           <font>
+                              <Font name="Cambria Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </GridPane>
+            <VBox prefHeight="883.0" prefWidth="921.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <HBox alignment="BOTTOM_CENTER" prefHeight="8.0" prefWidth="593.0" />
+                  <HBox fx:id="boxGalerie" alignment="BOTTOM_CENTER" prefHeight="66.0" prefWidth="775.0">
+                     <children>
+                        <Label text="Ma Galerie">
+                           <font>
+                              <Font name="Cambria Bold" size="34.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="boxAdd" alignment="CENTER" prefHeight="65.0" prefWidth="775.0">
+                     <children>
+                        <Button fx:id="addImages" mnemonicParsing="false" onAction="#attachImages" styleClass="attachBtn" stylesheets="@profilfxml.css" text="+ Ajouter vos photos">
+                           <font>
+                              <Font name="Cambria Bold" size="18.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding></HBox>
+                  <HBox fx:id="sceneGalerie" prefHeight="694.0" prefWidth="680.0" styleClass="container" stylesheets="@profilfxml.css" VBox.vgrow="ALWAYS">
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.5921052694320679" green="0.5921052694320679" blue="0.5921052694320679" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <children>
+                        <ScrollPane fx:id="scrolImg" prefHeight="728.0" prefWidth="887.0" HBox.hgrow="ALWAYS">
+                           <content>
+                              <GridPane fx:id="gridImg" prefHeight="10.0" prefWidth="8.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                              </GridPane>
+                           </content>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </ScrollPane>
+                     </children></HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </content>
+   <padding>
+      <Insets left="30.0" top="30.0" />
+   </padding>
+</ScrollPane>

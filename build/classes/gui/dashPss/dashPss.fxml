@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<HBox fx:id="hboxScene" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="675.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.dashPss.DashPssController">
+   <children>
+      <GridPane HBox.hgrow="ALWAYS">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="159.0" minHeight="10.0" prefHeight="122.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="413.0" minHeight="10.0" prefHeight="237.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="259.0" minHeight="10.0" prefHeight="86.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="223.0" minHeight="10.0" prefHeight="223.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+               <children>
+                  <Label alignment="TOP_LEFT" prefHeight="177.0" prefWidth="654.0" text="welcom" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+   </children>
+</HBox>
